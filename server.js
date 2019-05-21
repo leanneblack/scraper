@@ -13,6 +13,9 @@ var app = express();
 //sets up express router
 let router = express.Router();
 
+// require the routes file for the router object
+require("./config/routes")(router);
+
 // makes public folder the static directory
 app.use(express.static(__dirname + "/public"));
 
@@ -41,7 +44,7 @@ let db = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
 mongoose.connect(db, function(error) {
   //log the errors if there are any
   if (error) {
-    conosle.log("oh nooo, there is an error");
+    console.log("oh nooo, there is an error");
 
     // if no errors log a success message
   } else {
