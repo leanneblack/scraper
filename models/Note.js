@@ -2,10 +2,10 @@
 var mongoose = require("mongoose");
 
 // schema with mongoose method to create schema
-var noteSchema = mongoose.Schema;
+var Schema = mongoose.Schema;
 
 //new schema that requires that has headline id--for article
-var headlineSchema = new Schema({
+var noteSchema = new Schema({
   _headlineId: {
     type: Schema.Types.ObjectId,
     ref: "Headline"

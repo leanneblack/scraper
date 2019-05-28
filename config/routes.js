@@ -17,11 +17,11 @@ module.exports = function(router) {
     headlinesController.fetch(function(err, docs) {
       if (!docs || docs.insertedCount === 0) {
         resp.json({
-          message: "No new Squawks have been Squawked, fly in later!"
+          message: "No new Articles"
         });
       } else {
         resp.json({
-          message: "Here are the " + docs.insertedCount + " new Squawks!"
+          message: "Here are the " + docs.insertedCount + " new articles!"
         });
       }
     });

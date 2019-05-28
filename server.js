@@ -38,7 +38,7 @@ app.use(
 app.use(router);
 
 //database deployed or the local host database mongoHeadlines
-let db = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
+const db = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
 
 //connect mongoose to the database
 mongoose.connect(db, function(error) {
