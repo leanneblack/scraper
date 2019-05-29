@@ -1,19 +1,19 @@
-// mongoose package
 var mongoose = require("mongoose");
 
-// schema with mongoose method to create schema
+// Save a reference to the Schema constructor
 var Schema = mongoose.Schema;
 
-//new schema that requires that has headline id--for article
-var noteSchema = new Schema({
-  _headlineId: {
-    type: Schema.Types.ObjectId,
-    ref: "Headline"
-  },
-  date: String,
-  noteText: String
+// Using the Schema constructor, create a new NoteSchema object
+// This is similar to a Sequelize model
+var NoteSchema = new Schema({
+  // `title` is of type String
+  title: String,
+  // `body` is of type String
+  body: String
 });
 
-// export note model
-var Note = mongoose.model("Note", noteSchema);
+// This creates our model from the above schema, using mongoose's model method
+var Note = mongoose.model("Note", NoteSchema);
+
+// Export the Note model
 module.exports = Note;
