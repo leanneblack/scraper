@@ -1,25 +1,25 @@
 /* import google fonts */
 
-@import url('https://fonts.googleapis.com/css?family=Barrio|Roboto:100,300,400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Mukta:300,500|Niramit:200,400,600&display=swap');
 
 
 a.navbar-brand.logo {
-  font-family: "Barrio";
+  font-family: "Niramit";
   font-size: 32px;
   letter-spacing: 1px;
-  color: rgb(24, 206, 115);
+  color: #3d3d3d;
 }
 
 
 a.navbar-brand {
-  font-family: "Barrio";
+  font-family: "Niramit";
   font-size: 32px;
   letter-spacing: 1px;
-  color: rgb(24, 206, 115);
+  color: #3d3d3d;
 }
 
 .scrape-new {
-  font-family: "Roboto";
+  font-family: "Mukta";
   font-size: 16px;
   letter-spacing: 1px;
   color: #fff;
@@ -28,34 +28,34 @@ a.navbar-brand {
 }
 
 button.navbar-toggler {
-  color: rgb(24, 206, 115);
+  background-color: #ccc;
+
 }
 
 .navbar a {
-  font-family: "Roboto";
+  font-family: "Mukta";
   font-size: 10px;
   letter-spacing: 2px;
   color: #3d3d3d;
 }
 
 .button {
-  background-color: rgb(24, 206, 115);
-
+  background-color: #295230;
   color: #fff;
 }
 
 
 a.btn.button.btn-lg.scrape-new {
-  background-color: rgb(24, 206, 115);
+  background-color: #3d3d3d;
   color: #fff;
 }
 
 .button a {
-  color: #FFF;
+  color: #295230;
 }
 
 .caption p {
-  font-family: "Barrio";
+  font-family: "Niramit";
   font-size: 32px;
   letter-spacing: 1px;
   margin: auto;
@@ -63,14 +63,14 @@ a.btn.button.btn-lg.scrape-new {
 }
 
 li a {
-  font-family: "Roboto";
+  font-family: "Mukta";
   font-size: 10px;
   letter-spacing: 2px;
 }
 
 body {
   margin-bottom: 80px;
-  font-family: "Roboto";
+  font-family: "Mukta";
   font-weight: 300;
   letter-spacing: 1px;
   font-size: 11px;
@@ -81,7 +81,7 @@ body {
   bottom: 0;
   width: 100%;
   height: 80px;
-  font-family: "Roboto";
+  font-family: "Mukta";
   font-weight: 100;
   font-size: 11px;
 
@@ -91,8 +91,21 @@ body {
   margin-bottom: 0;
 }
 
+
+
 .jumbotron {
   height: 560px;
+  background-image: url(../images/IMG_2188-2.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
 
+.caption {
+  color: #fff;
+  padding: 20px;
 
+}
+
+a.btn.button.scrape-new {
+  color: #fff;
 }
